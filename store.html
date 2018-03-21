@@ -19,6 +19,22 @@
 
     <!-- Custom styles for this template -->
     <link href="css/business-casual.min.css" rel="stylesheet">
+    
+    <script> 
+      $(document).ready(function(){
+        $("#myDropdown").hide(); // Hide login form
+	      $(".dropbtn").click(function()  {  
+		      // Toggle the dropdown when the login button is clicked
+		      $("#myDropdown").slideToggle("slow");
+        });
+
+        $(".menu-dropdown").hide();
+        $(".menu-dropdown-parent").click(function()  {  
+		      // Toggle the dropdown when the login button is clicked
+		      $(".menu-dropdown").slideToggle("slow");
+        });
+      });
+    </script>
 
   </head>
 
@@ -44,14 +60,27 @@
               <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+              <a class="menu-dropdown-parent nav-link text-uppercase text-expanded" >Menu</a>
+              <div class="menu-dropdown">
+                <p>ALDUIN COFFEE</p>
+                <img class="thumbnail" src="img/alduincoffee.jpeg">
+                <p>ALDUIN SWEET TEA</p>
+                <img class="thumbnail" src="img/ald-sweet-tea.jpg">
+                <p>MOCHA-ALD</p>
+                <img class="thumbnail" src="img/mocha-ald.jpg">
+              </div>
             </li>
             <li class="nav-item active px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
             </li>
- <li class="nav-item px-lg-4">
-  <a class="nav-link text-uppercase text-expanded" href="index.html">LogIn</a>
- </li>        </ul>
+ <div id="dropdownclass" class="dropdown">
+  <button class="dropbtn nav-link text-uppercase text-expanded">Login</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Username">
+    <input type="text" placeholder="4 digit pin" maxlength="4">
+  </div>
+</div>        
+          </ul>
         </div>
       </div>
     </nav>
@@ -72,27 +101,27 @@
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Monday
-                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                  <span class="ml-auto">7:00 AM to 10:00 PM</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Tuesday
-                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                  <span class="ml-auto">7:00 AM to 10:00 PM</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Wednesday
-                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                  <span class="ml-auto">7:00 AM to 10:00 PM</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Thursday
-                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                  <span class="ml-auto">7:00 AM to 10:00 PM</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Friday
-                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                  <span class="ml-auto">7:00 AM to 10:00 PM</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Saturday
-                  <span class="ml-auto">9:00 AM to 5:00 PM</span>
+                  <span class="ml-auto">Closed</span>
                 </li>
               </ul>
               <p class="address mb-5">
@@ -139,7 +168,7 @@
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
-        <p class="m-0 small">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 small">service@alduin.com</p>
       </div>
     </footer>
 
