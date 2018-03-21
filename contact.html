@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Alduin Coffee</title>
+    <title>Business Casual - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,8 +19,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/business-casual.css" rel="stylesheet">
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script> 
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script> 
       $(document).ready(function(){
         $("#myDropdown").hide(); // Hide login form
 	      $(".dropbtn").click(function()  {  
@@ -35,12 +35,11 @@
         });
       });
     </script>
-
   </head>
 
   <body>
 
-   
+    
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
@@ -95,82 +94,96 @@
         </div>
       </div>
     </nav>
+ 
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+    
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Choose One:</option>
+                                <option value="service">General Customer Service</option>
+                                <option value="suggestions">Suggestions</option>
+                                <option value="product">Product Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            Send Message</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form><br>
+            <p><font size="5" color="white">Our Office</font></p>
+            <address>
+                <p><font size="3.5" color="white">795 Folsom Ave, Suite 600</font></p>
+                 <p><font size="3.5" color="white">San Francisco, CA 94107</font></p>
+                
+                <abbr title="Phone">
+                    P:</abbr>
+                <p><font size="3.5" color="white">(614)-222-4444</font></p>
+               
+               </address>
+            <address>
+            <a href="mailto:#">service@alduin.com</a>
+            </address>
+            </form>
+        </div>
+    </div>
+</div>
+        </section>
 
     <section class="page-section cta">
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
             <div class="cta-inner text-center rounded">
-              <h2 class="section-heading mb-5">
-                <span class="section-heading-upper">Come On In</span>
-                <span class="section-heading-lower">We're Open</span>
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper"> Hours </span>
+                <span class="section-heading-lower"> Sunday Close</span>
               </h2>
-              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Sunday
-                  <span class="ml-auto">Closed</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Monday
-                  <span class="ml-auto">7:00 AM to 10:00 PM</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Tuesday
-                  <span class="ml-auto">7:00 AM to 10:00 PM</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Wednesday
-                  <span class="ml-auto">7:00 AM to 10:00 PM</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Thursday
-                  <span class="ml-auto">7:00 AM to 10:00 PM</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Friday
-                  <span class="ml-auto">7:00 AM to 10:00 PM</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Saturday
-                  <span class="ml-auto">Closed</span>
-                </li>
-              </ul>
-              <p class="address mb-5">
-                <em>
-                  <strong>1116 Orchard Street</strong>
-                  <br>
-                  Golden Valley, Minnesota
-                </em>
-              </p>
-              <p class="mb-0">
-                <small>
-                  <em>Call Anytime</em>
-                </small>
-                <br>
-                (317) 585-8468
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section about-heading">
-      <div class="container">
-        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
-        <div class="about-heading-content">
-          <div class="row">
-            <div class="col-xl-9 col-lg-10 mx-auto">
-              <div class="bg-faded rounded p-5">
-                <h2 class="section-heading mb-4">
-                  <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
-                  <span class="section-heading-lower">About Our Cafe</span>
-                </h2>
-                <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
-                <p class="mb-0">We guarantee that you will fall in
-                  <em>lust</em>
-                  with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.</p>
-              </div>
+              <p class="mb-0">Monday 7:00 AM - 10:00 PM</p>
+                 <p class="mb-0">Tuesday 7:00 AM - 10:00 PM</p>
+                 <p class="mb-0">wednesday 7:00 AM - 10:00 PM</p>
+                 <p class="mb-0">Thursday 7:00 AM - 10:00 PM</p>
+                 <p class="mb-0">Friday 7:00 AM - 10:00 PM</p>
+                 <p class="mb-0">Saturday 7:00 AM - 10:00 PM</p>
             </div>
           </div>
         </div>
@@ -179,7 +192,7 @@
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
-        <p class="m-0 small">service@alduin.com</p>
+        <p class="m-0 small">Copyright &copy; Your Website 2018</p>
       </div>
     </footer>
 
@@ -187,11 +200,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  </body>
-
-  <!-- Script to highlight the active date in the hours list -->
-  <script>
-    $('.list-hours li').eq(new Date().getDay()).addClass('today');
-  </script>
+ 
+ </body>
 
 </html>
