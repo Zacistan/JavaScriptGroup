@@ -305,3 +305,7 @@ p {
   border: none;
   cursor: pointer;
 }
+
+.white-color {
+ color: white; 
+}
