@@ -18,22 +18,37 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/business-casual.min.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet">
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script> 
+      $(document).ready(function(){
+        $("#myDropdown").hide(); // Hide login form
+	      $(".dropbtn").click(function()  {  
+		      // Toggle the dropdown when the login button is clicked
+		      $("#myDropdown").slideToggle("slow");
+        });
 
+        $(".menu-dropdown").hide();
+        $(".menu-dropdown-parent").click(function()  {  
+		      // Toggle the dropdown when the login button is clicked
+		      $(".menu-dropdown").slideToggle("slow");
+        });
+      });
+    </script>
   </head>
 
   <body>
 
-       <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Alduin Coffee</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item px-lg-4">
+            <li class="nav-item active px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="index.html">Home
                 <span class="sr-only">(current)</span>
               </a>
@@ -52,28 +67,50 @@
                 <img class="thumbnail" src="img/mocha-ald.jpg">
               </div>
             </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
-            </li>
-  <li class="nav-item px-lg-4">
-     <a class="nav-link text-uppercase text-expanded" href="index.html">LogIn</a>
- </li>    </ul>
+		<li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+        </li>
+	    <li class="nav-item px-lg-4">
+	      <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>  
+	    </li>
+	    <li class="nav-item px-lg-4">
+		<div id="dropdownclass" class="dropdown nav-item px-lg-4">
+  		  <button class="dropbtn nav-link text-uppercase text-expanded">Login</button>
+  		  <div id="myDropdown" class="dropdown-content">
+    		    <input type="text" placeholder="Username">
+    		    <input type="text" placeholder="4 digit pin" maxlength="4">
+  		  </div>
+		</div>
+	    </li>
+	    <li>
+		<input type="text" placeholder="Search">
+	    </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div form action="a">
+      </div> 
+         
+</ul>
         </div>
       </div>
     </nav>
 
     <section class="page-section">
-      <div class="container">
+    <div class="container">
         <div class="product-item">
           <div class="product-item-title d-flex">
             <div class="bg-faded p-5 d-flex ml-auto rounded">
               <h2 class="section-heading mb-0">
-                <span class="section-heading-upper">Blended to Perfection</span>
-                <span class="section-heading-lower">Coffees &amp; Teas</span>
+                
+                <span class="section-heading-lower">   Coffees &amp; Teas</span>
+
               </h2>
-            </div>
+              </div>
           </div>
-          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-01.jpg" alt="">
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/menuimg.jpg" alt="">
           <div class="product-item-description d-flex mr-auto">
             <div class="bg-faded p-5 rounded">
               <p class="mb-0">We take pride in our work, and it shows. Every time you order a beverage from us, we guarantee that it will be an experience worth having. Whether it's our world famous Venezuelan Cappuccino, a refreshing iced herbal tea, or something as simple as a cup of speciality sourced black coffee, you will be coming back for more.</p>
@@ -127,12 +164,12 @@
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
-        <p class="m-0 small">service@alduin.com</p>
+        <p class="m-0 small">Copyright &copy; Your Website 2018</p>
       </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
